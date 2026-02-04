@@ -19,5 +19,11 @@ public class Main {
 
                 //ESTE ES UN COMENTARIO
 
+        //OTRO_ALUMNO
+        user.configurarGastosMensuales(750.0, 200.0);
+
+        double misGastos = user.calcularGastosTotales();
+        System.out.println("Total gastos registrados: " + misGastos + "€");
+
     }
 }

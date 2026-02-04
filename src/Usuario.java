@@ -15,4 +15,23 @@ public class Usuario {
         this.nombre = nuevoNombre;
         this.email = nuevoEmail;
     }
+
+    double alquiler;
+    double gastosVarios;
+
+    // Método para establecer estos gastos
+    public void configurarGastosMensuales(double alquiler, double gastosVarios) {
+        this.alquiler = alquiler;
+        this.gastosVarios = gastosVarios;
+    }
+
+    // Funcionalidad de cálculo de gastos totales
+    public double calcularGastosTotales() {
+        double totalViajes = 0;
+
+
+        double total = this.alquiler + this.gastosVarios + totalViajes;
+        System.out.println("📉 Calculando gastos totales...");
+        return total;
+    }
 }
